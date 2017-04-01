@@ -1,0 +1,31 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  right: 0;
+  top: 0;
+  width: 70px;
+  height: 100vh;
+  background-color: $gray;
+  &__container {
+    position: relative;
+    height: 300px;
+  }
+  &__menu {
+    transform: rotate(90.0deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    transform: rotate(90deg);
+    transform-origin: 0;
+    position: absolute;
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    left: 35px;
+    a {
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: magenta;
+  &__loader {
+    background-color: yellow;
+    flex: 1;
+    &--container {
+      width: 285px;
+      word-wrap: break-word;
+      line-height: 168px;
+      margin: 0 auto;
+      h1 {
+        font-weight: 600;
+        color: $gray;
+        margin: 0;
+        span {
+          color: black;
+        }
+      }
+    }
+  }
+  &__resume {
+    flex: 1;
+    background-color: blue;
+    &--container {
+      width: 250px;
+    }
+    &--bottom {
+      transform: rotate(90deg);
+      position: absolute;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+}
